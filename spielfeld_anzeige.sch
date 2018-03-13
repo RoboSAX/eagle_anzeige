@@ -10661,7 +10661,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="display-kingbright" deviceset="TA20-11HWA" device=""/>
 <part name="D2" library="display-kingbright" deviceset="TA20-11HWA" device=""/>
-<part name="D3" library="display-kingbright" deviceset="TA20-11HWA" device=""/>
 <part name="L1" library="robo_ag" deviceset="LED" device="-5MM" value="red"/>
 <part name="L2" library="robo_ag" deviceset="LED" device="-5MM" value="red"/>
 <part name="RN1" library="resistor-sil" deviceset="E4R" device="" value="180"/>
@@ -10670,7 +10669,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="RN3" library="resistor-sil" deviceset="E4R" device="" value="180"/>
-<part name="RN4" library="resistor-sil" deviceset="E4R" device="" value="180"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R3216" value="56"/>
 <part name="IC3" library="74xx-eu" deviceset="74*595" device="N" technology="HC"/>
@@ -10698,21 +10696,18 @@ DIN A3, landscape with extra doc field</description>
 <text x="-129.54" y="17.78" size="2.54" layer="97">npn to mass; row driver.
 same row selection for all 3 digits.</text>
 <text x="-128.27" y="-41.91" size="2.54" layer="97">pnp to +5V; column driver</text>
-<text x="-13.97" y="17.78" size="1.778" layer="97">minutes</text>
-<text x="48.26" y="17.78" size="1.778" layer="97">seconds x 10</text>
-<text x="106.68" y="17.78" size="1.778" layer="97">seconds</text>
-<text x="25.4" y="22.86" size="2.54" layer="97">! Dot Led orientation in schematic symbol is inverse !</text>
+<text x="13.97" y="40.64" size="2.54" layer="97">! Dot Led orientation in schematic symbol is inverse !</text>
 <text x="-128.27" y="-107.95" size="2.54" layer="97">pnp to +5V; column driver</text>
 <text x="-157.48" y="-10.16" size="1.778" layer="97">colon data better here?!</text>
 <wire x1="-203.2" y1="-22.86" x2="-45.72" y2="-22.86" width="0.3048" layer="94"/>
-<wire x1="-45.72" y1="-22.86" x2="-45.72" y2="-40.64" width="0.3048" layer="94"/>
-<wire x1="-45.72" y1="-40.64" x2="-45.72" y2="-199.39" width="0.3048" layer="94"/>
+<wire x1="-45.72" y1="-22.86" x2="-45.72" y2="-43.18" width="0.3048" layer="94"/>
+<wire x1="-45.72" y1="-43.18" x2="-45.72" y2="-199.39" width="0.3048" layer="94"/>
 <wire x1="-203.2" y1="-199.39" x2="-203.2" y2="-22.86" width="0.3048" layer="94"/>
 <wire x1="-203.2" y1="-22.86" x2="-203.2" y2="24.13" width="0.3048" layer="94"/>
 <wire x1="-203.2" y1="24.13" x2="-203.2" y2="64.77" width="0.3048" layer="94"/>
 <wire x1="-45.72" y1="64.77" x2="-45.72" y2="-22.86" width="0.3048" layer="94"/>
-<wire x1="139.7" y1="-40.64" x2="-45.72" y2="-40.64" width="0.3048" layer="94"/>
-<text x="-43.18" y="20.32" size="2.54" layer="97">DOT MATRICES</text>
+<wire x1="139.7" y1="-43.18" x2="-45.72" y2="-43.18" width="0.3048" layer="94"/>
+<text x="-7.62" y="33.02" size="2.54" layer="97">DOT MATRICES</text>
 <text x="-240.03" y="58.42" size="2.54" layer="97">Board Connector</text>
 <wire x1="-203.2" y1="24.13" x2="-248.92" y2="24.13" width="0.3048" layer="94"/>
 <text x="-246.38" y="19.05" size="2.54" layer="97">Shift-Reg Clear</text>
@@ -10724,11 +10719,10 @@ same row selection for all 3 digits.</text>
 <instance part="IC1" gate="1" x="-119.38" y="-58.42"/>
 <instance part="GND13" gate="1" x="-106.68" y="-73.66"/>
 <instance part="P+6" gate="1" x="-137.16" y="-68.58" rot="R90"/>
-<instance part="D1" gate="G$1" x="-8.89" y="0"/>
-<instance part="D2" gate="G$1" x="54.61" y="0"/>
-<instance part="D3" gate="G$1" x="111.76" y="0"/>
-<instance part="L1" gate="LED" x="11.43" y="-8.89"/>
-<instance part="L2" gate="LED" x="11.43" y="1.27"/>
+<instance part="D1" gate="G$1" x="26.67" y="12.7"/>
+<instance part="D2" gate="G$1" x="90.17" y="12.7"/>
+<instance part="L1" gate="LED" x="46.99" y="3.81"/>
+<instance part="L2" gate="LED" x="46.99" y="13.97"/>
 <instance part="RN1" gate="A" x="-99.06" y="-48.26"/>
 <instance part="RN1" gate="B" x="-91.44" y="-50.8"/>
 <instance part="RN1" gate="C" x="-83.82" y="-53.34"/>
@@ -10742,14 +10736,10 @@ same row selection for all 3 digits.</text>
 <instance part="P+1" gate="1" x="-137.16" y="-134.62" rot="R90"/>
 <instance part="RN3" gate="A" x="-99.06" y="-114.3"/>
 <instance part="RN3" gate="B" x="-91.44" y="-116.84"/>
-<instance part="RN3" gate="C" x="-83.82" y="-119.38"/>
-<instance part="RN3" gate="D" x="-76.2" y="-121.92"/>
-<instance part="RN4" gate="A" x="-99.06" y="-124.46"/>
-<instance part="RN4" gate="B" x="-91.44" y="-127"/>
-<instance part="RN4" gate="C" x="-83.82" y="-129.54"/>
-<instance part="RN4" gate="D" x="-86.36" y="-140.97"/>
-<instance part="GND2" gate="1" x="11.43" y="-19.05"/>
-<instance part="R1" gate="G$1" x="11.43" y="11.43" rot="R90"/>
+<instance part="RN3" gate="C" x="-85.09" y="-132.08"/>
+<instance part="RN3" gate="D" x="-85.09" y="-137.16"/>
+<instance part="GND2" gate="1" x="46.99" y="-6.35"/>
+<instance part="R1" gate="G$1" x="46.99" y="24.13" rot="R90"/>
 <instance part="IC3" gate="A" x="-167.64" y="0"/>
 <instance part="IC4" gate="A" x="-170.18" y="-58.42"/>
 <instance part="IC5" gate="A" x="-170.18" y="-124.46"/>
@@ -10879,7 +10869,7 @@ same row selection for all 3 digits.</text>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="L1" gate="LED" pin="C"/>
-<wire x1="11.43" y1="-16.51" x2="11.43" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="-3.81" x2="46.99" y2="-1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R7_DATA" class="0">
@@ -10916,8 +10906,8 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="R1_OUT" class="0">
 <segment>
-<wire x1="-24.13" y1="-5.08" x2="-26.67" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-26.67" y="-5.08" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="7.62" x2="8.89" y2="7.62" width="0.1524" layer="91"/>
+<label x="8.89" y="7.62" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R1"/>
 </segment>
 <segment>
@@ -10926,20 +10916,15 @@ same row selection for all 3 digits.</text>
 <wire x1="-99.06" y1="10.16" x2="-104.14" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="-5.08" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="7.62" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R1"/>
-<wire x1="36.83" y1="-5.08" x2="39.37" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="-5.08" x2="92.71" y2="-5.08" width="0.1524" layer="91"/>
-<label x="92.71" y="-5.08" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R1"/>
+<wire x1="72.39" y1="7.62" x2="74.93" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R3_OUT" class="0">
 <segment>
-<wire x1="-24.13" y1="0" x2="-26.67" y2="0" width="0.1524" layer="91"/>
-<label x="-26.67" y="0" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="12.7" x2="8.89" y2="12.7" width="0.1524" layer="91"/>
+<label x="8.89" y="12.7" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R3"/>
 </segment>
 <segment>
@@ -10948,20 +10933,15 @@ same row selection for all 3 digits.</text>
 <wire x1="-104.14" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="0" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="12.7" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R3"/>
-<wire x1="39.37" y1="0" x2="36.83" y2="0" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="0" x2="92.71" y2="0" width="0.1524" layer="91"/>
-<label x="92.71" y="0" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R3"/>
+<wire x1="74.93" y1="12.7" x2="72.39" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R2_OUT" class="0">
 <segment>
-<wire x1="-24.13" y1="-2.54" x2="-26.67" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-26.67" y="-2.54" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="10.16" x2="8.89" y2="10.16" width="0.1524" layer="91"/>
+<label x="8.89" y="10.16" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R2"/>
 </segment>
 <segment>
@@ -10970,14 +10950,9 @@ same row selection for all 3 digits.</text>
 <wire x1="-99.06" y1="7.62" x2="-104.14" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="-2.54" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="10.16" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R2"/>
-<wire x1="39.37" y1="-2.54" x2="36.83" y2="-2.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="-2.54" x2="92.71" y2="-2.54" width="0.1524" layer="91"/>
-<label x="92.71" y="-2.54" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R2"/>
+<wire x1="74.93" y1="10.16" x2="72.39" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R2_DATA" class="0">
@@ -11054,8 +11029,8 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D1_C1_OUT" class="0">
 <segment>
-<wire x1="-11.43" y1="-17.78" x2="-11.43" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-11.43" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="24.13" y1="-5.08" x2="24.13" y2="-12.7" width="0.1524" layer="91"/>
+<label x="24.13" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C1"/>
 </segment>
 <segment>
@@ -11066,8 +11041,8 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D1_C2_OUT" class="0">
 <segment>
-<wire x1="-8.89" y1="-17.78" x2="-8.89" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-8.89" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="26.67" y1="-5.08" x2="26.67" y2="-12.7" width="0.1524" layer="91"/>
+<label x="26.67" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C2"/>
 </segment>
 <segment>
@@ -11078,13 +11053,13 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D1_C3_OUT" class="0">
 <segment>
-<wire x1="-6.35" y1="-17.78" x2="-6.35" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-6.35" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="29.21" y1="-5.08" x2="29.21" y2="-12.7" width="0.1524" layer="91"/>
+<label x="29.21" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C3"/>
 </segment>
 <segment>
-<wire x1="-13.97" y1="-17.78" x2="-13.97" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-13.97" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="21.59" y1="-5.08" x2="21.59" y2="-12.7" width="0.1524" layer="91"/>
+<label x="21.59" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C3@1"/>
 </segment>
 <segment>
@@ -11095,8 +11070,8 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D1_C4_OUT" class="0">
 <segment>
-<wire x1="-3.81" y1="-17.78" x2="-3.81" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-3.81" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="31.75" y1="-5.08" x2="31.75" y2="-12.7" width="0.1524" layer="91"/>
+<label x="31.75" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C4"/>
 </segment>
 <segment>
@@ -11107,8 +11082,8 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D1_C5_OUT" class="0">
 <segment>
-<wire x1="-1.27" y1="-17.78" x2="-1.27" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-1.27" y="-26.67" size="1.778" layer="91" rot="MR270"/>
+<wire x1="34.29" y1="-5.08" x2="34.29" y2="-12.7" width="0.1524" layer="91"/>
+<label x="34.29" y="-13.97" size="1.778" layer="91" rot="MR270"/>
 <pinref part="D1" gate="G$1" pin="C5"/>
 </segment>
 <segment>
@@ -11120,8 +11095,8 @@ same row selection for all 3 digits.</text>
 <net name="R7_OUT" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="R7"/>
-<wire x1="-24.13" y1="10.16" x2="-26.67" y2="10.16" width="0.1524" layer="91"/>
-<label x="-26.67" y="10.16" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="22.86" x2="8.89" y2="22.86" width="0.1524" layer="91"/>
+<label x="8.89" y="22.86" size="1.778" layer="91" rot="MR0"/>
 </segment>
 <segment>
 <label x="-99.06" y="-5.08" size="1.778" layer="91" rot="MR180"/>
@@ -11129,21 +11104,16 @@ same row selection for all 3 digits.</text>
 <wire x1="-104.14" y1="-5.08" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="10.16" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="22.86" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R7"/>
-<wire x1="39.37" y1="10.16" x2="36.83" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="10.16" x2="92.71" y2="10.16" width="0.1524" layer="91"/>
-<label x="92.71" y="10.16" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R7"/>
+<wire x1="74.93" y1="22.86" x2="72.39" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R6_OUT" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="R6"/>
-<wire x1="-24.13" y1="7.62" x2="-26.67" y2="7.62" width="0.1524" layer="91"/>
-<label x="-26.67" y="7.62" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="20.32" x2="8.89" y2="20.32" width="0.1524" layer="91"/>
+<label x="8.89" y="20.32" size="1.778" layer="91" rot="MR0"/>
 </segment>
 <segment>
 <label x="-99.06" y="-2.54" size="1.778" layer="91" rot="MR180"/>
@@ -11151,20 +11121,15 @@ same row selection for all 3 digits.</text>
 <wire x1="-99.06" y1="-2.54" x2="-104.14" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="7.62" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="20.32" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R6"/>
-<wire x1="39.37" y1="7.62" x2="36.83" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="7.62" x2="92.71" y2="7.62" width="0.1524" layer="91"/>
-<label x="92.71" y="7.62" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R6"/>
+<wire x1="74.93" y1="20.32" x2="72.39" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R5_OUT" class="0">
 <segment>
-<wire x1="-24.13" y1="5.08" x2="-26.67" y2="5.08" width="0.1524" layer="91"/>
-<label x="-26.67" y="5.08" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="17.78" x2="8.89" y2="17.78" width="0.1524" layer="91"/>
+<label x="8.89" y="17.78" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R5"/>
 </segment>
 <segment>
@@ -11173,25 +11138,20 @@ same row selection for all 3 digits.</text>
 <wire x1="-104.14" y1="0" x2="-99.06" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="5.08" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="17.78" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R5"/>
-<wire x1="39.37" y1="5.08" x2="36.83" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="5.08" x2="92.71" y2="5.08" width="0.1524" layer="91"/>
-<label x="92.71" y="5.08" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R5"/>
+<wire x1="74.93" y1="17.78" x2="72.39" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R4_OUT" class="0">
 <segment>
-<wire x1="-24.13" y1="2.54" x2="-26.67" y2="2.54" width="0.1524" layer="91"/>
-<label x="-26.67" y="2.54" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="15.24" x2="8.89" y2="15.24" width="0.1524" layer="91"/>
+<label x="8.89" y="15.24" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R4"/>
 </segment>
 <segment>
-<wire x1="-24.13" y1="-7.62" x2="-26.67" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-26.67" y="-7.62" size="1.778" layer="91" rot="MR0"/>
+<wire x1="11.43" y1="5.08" x2="8.89" y2="5.08" width="0.1524" layer="91"/>
+<label x="8.89" y="5.08" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D1" gate="G$1" pin="R4@1"/>
 </segment>
 <segment>
@@ -11200,24 +11160,14 @@ same row selection for all 3 digits.</text>
 <wire x1="-99.06" y1="2.54" x2="-104.14" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="2.54" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="15.24" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R4"/>
-<wire x1="39.37" y1="2.54" x2="36.83" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="15.24" x2="72.39" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="36.83" y="-7.62" size="1.778" layer="91" rot="MR0"/>
+<label x="72.39" y="5.08" size="1.778" layer="91" rot="MR0"/>
 <pinref part="D2" gate="G$1" pin="R4@1"/>
-<wire x1="39.37" y1="-7.62" x2="36.83" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="2.54" x2="92.71" y2="2.54" width="0.1524" layer="91"/>
-<label x="92.71" y="2.54" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R4"/>
-</segment>
-<segment>
-<wire x1="96.52" y1="-7.62" x2="92.71" y2="-7.62" width="0.1524" layer="91"/>
-<label x="92.71" y="-7.62" size="1.778" layer="91" rot="MR0"/>
-<pinref part="D3" gate="G$1" pin="R4@1"/>
+<wire x1="74.93" y1="5.08" x2="72.39" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D2_C1_DATA" class="0">
@@ -11294,14 +11244,14 @@ same row selection for all 3 digits.</text>
 </net>
 <net name="D2_C4_OUT" class="0">
 <segment>
-<label x="-64.77" y="-114.3" size="1.778" layer="91"/>
+<label x="-81.28" y="-114.3" size="1.778" layer="91"/>
 <pinref part="RN3" gate="A" pin="2"/>
-<wire x1="-93.98" y1="-114.3" x2="-66.04" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-114.3" x2="-82.55" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C4"/>
-<wire x1="59.69" y1="-17.78" x2="59.69" y2="-20.32" width="0.1524" layer="91"/>
-<label x="59.69" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="95.25" y1="-5.08" x2="95.25" y2="-7.62" width="0.1524" layer="91"/>
+<label x="95.25" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -11316,41 +11266,6 @@ same row selection for all 3 digits.</text>
 <pinref part="IC2" gate="1" pin="O2"/>
 <pinref part="RN3" gate="B" pin="1"/>
 <wire x1="-106.68" y1="-116.84" x2="-96.52" y2="-116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="IC2" gate="1" pin="O3"/>
-<pinref part="RN3" gate="C" pin="1"/>
-<wire x1="-106.68" y1="-119.38" x2="-88.9" y2="-119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="RN3" gate="D" pin="1"/>
-<pinref part="IC2" gate="1" pin="O4"/>
-<wire x1="-81.28" y1="-121.92" x2="-106.68" y2="-121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="IC2" gate="1" pin="O5"/>
-<pinref part="RN4" gate="A" pin="1"/>
-<wire x1="-106.68" y1="-124.46" x2="-104.14" y2="-124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC2" gate="1" pin="O6"/>
-<pinref part="RN4" gate="B" pin="1"/>
-<wire x1="-106.68" y1="-127" x2="-96.52" y2="-127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="IC2" gate="1" pin="O7"/>
-<pinref part="RN4" gate="C" pin="1"/>
-<wire x1="-106.68" y1="-129.54" x2="-88.9" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -11368,8 +11283,8 @@ same row selection for all 3 digits.</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C1"/>
-<wire x1="52.07" y1="-17.78" x2="52.07" y2="-20.32" width="0.1524" layer="91"/>
-<label x="52.07" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="87.63" y1="-5.08" x2="87.63" y2="-7.62" width="0.1524" layer="91"/>
+<label x="87.63" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11429,8 +11344,8 @@ same row selection for all 3 digits.</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C2"/>
-<wire x1="54.61" y1="-17.78" x2="54.61" y2="-20.32" width="0.1524" layer="91"/>
-<label x="54.61" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="90.17" y1="-5.08" x2="90.17" y2="-7.62" width="0.1524" layer="91"/>
+<label x="90.17" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 </net>
 <net name="D2_C3_OUT" class="0">
@@ -11441,102 +11356,37 @@ same row selection for all 3 digits.</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C3"/>
-<wire x1="57.15" y1="-17.78" x2="57.15" y2="-20.32" width="0.1524" layer="91"/>
-<label x="57.15" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="92.71" y1="-5.08" x2="92.71" y2="-7.62" width="0.1524" layer="91"/>
+<label x="92.71" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C3@1"/>
-<wire x1="49.53" y1="-17.78" x2="49.53" y2="-20.32" width="0.1524" layer="91"/>
-<label x="49.53" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="85.09" y1="-5.08" x2="85.09" y2="-7.62" width="0.1524" layer="91"/>
+<label x="85.09" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 </net>
 <net name="D2_C5_OUT" class="0">
 <segment>
-<label x="-64.77" y="-116.84" size="1.778" layer="91"/>
+<label x="-81.28" y="-116.84" size="1.778" layer="91"/>
 <pinref part="RN3" gate="B" pin="2"/>
-<wire x1="-66.04" y1="-116.84" x2="-86.36" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-82.55" y1="-116.84" x2="-86.36" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C5"/>
-<wire x1="62.23" y1="-17.78" x2="62.23" y2="-20.32" width="0.1524" layer="91"/>
-<label x="62.23" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-</net>
-<net name="D3_C1_OUT" class="0">
-<segment>
-<label x="-64.77" y="-119.38" size="1.778" layer="91"/>
-<pinref part="RN3" gate="C" pin="2"/>
-<wire x1="-66.04" y1="-119.38" x2="-78.74" y2="-119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C1"/>
-<wire x1="109.22" y1="-17.78" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
-<label x="109.22" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-</net>
-<net name="D3_C2_OUT" class="0">
-<segment>
-<label x="-64.77" y="-121.92" size="1.778" layer="91"/>
-<pinref part="RN3" gate="D" pin="2"/>
-<wire x1="-66.04" y1="-121.92" x2="-71.12" y2="-121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C2"/>
-<wire x1="111.76" y1="-17.78" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
-<label x="111.76" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-</net>
-<net name="D3_C3_OUT" class="0">
-<segment>
-<label x="-64.77" y="-124.46" size="1.778" layer="91"/>
-<pinref part="RN4" gate="A" pin="2"/>
-<wire x1="-66.04" y1="-124.46" x2="-93.98" y2="-124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C3@1"/>
-<wire x1="106.68" y1="-17.78" x2="106.68" y2="-20.32" width="0.1524" layer="91"/>
-<label x="106.68" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C3"/>
-<wire x1="114.3" y1="-17.78" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
-<label x="114.3" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-</net>
-<net name="D3_C4_OUT" class="0">
-<segment>
-<pinref part="RN4" gate="B" pin="2"/>
-<wire x1="-86.36" y1="-127" x2="-66.04" y2="-127" width="0.1524" layer="91"/>
-<label x="-64.77" y="-127" size="1.778" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C4"/>
-<wire x1="116.84" y1="-17.78" x2="116.84" y2="-20.32" width="0.1524" layer="91"/>
-<label x="116.84" y="-21.59" size="1.778" layer="91" rot="R270"/>
-</segment>
-</net>
-<net name="D3_C5_OUT" class="0">
-<segment>
-<pinref part="RN4" gate="C" pin="2"/>
-<wire x1="-78.74" y1="-129.54" x2="-66.04" y2="-129.54" width="0.1524" layer="91"/>
-<label x="-64.77" y="-129.54" size="1.778" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C5"/>
-<wire x1="119.38" y1="-17.78" x2="119.38" y2="-20.32" width="0.1524" layer="91"/>
-<label x="119.38" y="-21.59" size="1.778" layer="91" rot="R270"/>
+<wire x1="97.79" y1="-5.08" x2="97.79" y2="-7.62" width="0.1524" layer="91"/>
+<label x="97.79" y="-8.89" size="1.778" layer="91" rot="R270"/>
 </segment>
 </net>
 <net name="COLON_OUT" class="0">
 <segment>
-<wire x1="11.43" y1="16.51" x2="11.43" y2="19.05" width="0.1524" layer="91"/>
-<label x="11.43" y="20.32" size="1.778" layer="91"/>
+<wire x1="46.99" y1="29.21" x2="46.99" y2="31.75" width="0.1524" layer="91"/>
+<label x="46.99" y="33.02" size="1.778" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="1" pin="O8"/>
-<wire x1="-66.04" y1="-132.08" x2="-106.68" y2="-132.08" width="0.1524" layer="91"/>
-<label x="-64.77" y="-132.08" size="1.778" layer="91"/>
+<pinref part="IC2" gate="1" pin="O3"/>
+<wire x1="-106.68" y1="-119.38" x2="-82.55" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-81.28" y="-119.38" size="1.778" layer="91"/>
 </segment>
 </net>
 <net name="COLON_DATA" class="0">
@@ -11679,14 +11529,14 @@ same row selection for all 3 digits.</text>
 <segment>
 <pinref part="L1" gate="LED" pin="A"/>
 <pinref part="L2" gate="LED" pin="C"/>
-<wire x1="11.43" y1="-6.35" x2="11.43" y2="-3.81" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="6.35" x2="46.99" y2="8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="L2" gate="LED" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="11.43" y1="3.81" x2="11.43" y2="6.35" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="16.51" x2="46.99" y2="19.05" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
