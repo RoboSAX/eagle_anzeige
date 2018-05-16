@@ -10945,6 +10945,11 @@ Grid 5.08 mm&lt;p&gt;
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="82"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="82"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="82"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11025,6 +11030,11 @@ same row selection for all 3 digits.</text>
 <instance part="R10" gate="G$1" x="-93.98" y="-111.76"/>
 <instance part="R11" gate="G$1" x="-93.98" y="-114.3"/>
 <instance part="R12" gate="G$1" x="-93.98" y="-116.84"/>
+<instance part="GND9" gate="1" x="-137.16" y="-53.34" rot="R270"/>
+<instance part="GND10" gate="1" x="-137.16" y="-55.88" rot="R270"/>
+<instance part="GND11" gate="1" x="-137.16" y="-104.14" rot="R270"/>
+<instance part="GND12" gate="1" x="-137.16" y="-106.68" rot="R270"/>
+<instance part="GND14" gate="1" x="-137.16" y="-109.22" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11156,6 +11166,31 @@ same row selection for all 3 digits.</text>
 <wire x1="-224.79" y1="-20.32" x2="-224.79" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="X1" gate="-1" pin="KL"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="1" pin="I2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="-134.62" y1="-53.34" x2="-132.08" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="1" pin="I3"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="-134.62" y1="-55.88" x2="-132.08" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="I1"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="-134.62" y1="-104.14" x2="-132.08" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="I2"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="-134.62" y1="-106.68" x2="-132.08" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="I3"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="-134.62" y1="-109.22" x2="-132.08" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R1_OUT" class="0">
@@ -11851,16 +11886,11 @@ same row selection for all 3 digits.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,1,-132.08,-104.14,IC1,I1,,,,"/>
-<approved hash="202,1,-132.08,-106.68,IC1,I2,,,,"/>
-<approved hash="202,1,-132.08,-109.22,IC1,I3,,,,"/>
-<approved hash="202,1,-132.08,-53.34,IC2,I2,,,,"/>
-<approved hash="202,1,-132.08,-55.88,IC2,I3,,,,"/>
 <approved hash="104,1,-175.26,17.78,IC3P,VCC,+5V,,,"/>
 <approved hash="104,1,-177.8,-96.52,IC4P,VCC,+5V,,,"/>
 <approved hash="104,1,-177.8,-43.18,IC5P,VCC,+5V,,,"/>
 <approved hash="113,1,-54.714,-67.414,FRAME1,,,,,"/>
-<approved hash="113,1,-235.143,-20.32,X1,,,,,"/>
+<approved hash="113,1,-235.045,-20.32,X1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
