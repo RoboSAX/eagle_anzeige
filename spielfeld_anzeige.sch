@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11890,7 +11890,6 @@ same row selection for all 3 digits.</text>
 <approved hash="104,1,-177.8,-96.52,IC4P,VCC,+5V,,,"/>
 <approved hash="104,1,-177.8,-43.18,IC5P,VCC,+5V,,,"/>
 <approved hash="113,1,-54.714,-67.414,FRAME1,,,,,"/>
-<approved hash="113,1,-235.045,-20.32,X1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
